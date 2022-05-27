@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(196, 185, 223);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center; /* items ko centre m rkhne k liye */
+  list-style-type: None; /*list m points hatane k liye*/
+  color: white;
+  background-color: black;
+  height: 65px;
+  cursor: pointer;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+  min-height: 60vh;
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 75%;
+  border-radius: 15px;
+  padding: 34px;
+  background-image: url("./logo.jpg");
+  background-size: cover;
+}
+
+.songList h1 {
+  padding: 15px;
+  color: black;
+  text-align: center;
+}
+
+.album img {
+  width: 300px;
+  margin: 150px 180px;
+  border-radius: 80rem;
+}
+
+.album img:hover {
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.bottom {
+  position: sticky;
+  height: 100px;
+  background-color: #454545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons img {
+  width: 44px;
+  margin: 10px 0;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  width: 500px;
+  background-color: rgb(208, 201, 201);
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  color: black;
+}
+
+span img {
+  width: 15px;
+}
+
+.image {
+  width: 43px;
+  border-radius: 2px;
+  margin: 0 15px;
+  border-radius: 34px;
+}
+
+.timespan {
+  margin: 0 23px;
+}
+
+.timespan img {
+  margin: 0 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 8vw;
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.songInfo span {
+  padding-bottom: 15px;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}

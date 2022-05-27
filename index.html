@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Spotify : Feel the music</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="../Spotify/Spotify/logo.png" alt="Spotify" /><span
+            >Spotify</span
+          >
+        </li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songList">
+        <h1>English Songs 2020 Vol-3</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/1.jpg" alt="1" class="image"
+            /></span>
+            <span class="songName">Let me love you</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >03:25<img src="../Spotify/play.png" alt="play" id="0" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/2.jpg" alt="2" class="image"
+            /></span>
+            <span class="songName">On my way</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >03:25<img src="../Spotify/play.png" alt="play" id="1" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/3.jpg" alt="3" class="image"
+            /></span>
+            <span class="songName">Sia - Unstoppable</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >04:35<img src="../Spotify/play.png" alt="play" id="2" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/4.jpg" alt="4" class="image"
+            /></span>
+            <span class="songName">Let me down slowly</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >02:57<img src="../Spotify/play.png" alt="play" id="3" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/5.jpg" alt="5" class="image"
+            /></span>
+            <span class="songName">Rockabye Baby</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >04:09<img src="../Spotify/play.png" alt="play" id="4" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/6.jpg" alt="6" class="image"
+            /></span>
+            <span class="songName">Astronomia</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >02:34<img src="../Spotify/play.png" alt="play" id="5" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/7.jpg" alt="7" class="image"
+            /></span>
+            <span class="songName">Sia - Cheap Thrills</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >04:05<img src="../Spotify/play.png" alt="play" id="6" /> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <span class="image"
+              ><img src="./Spotify/covers/8.jpg" alt="8" class="image"
+            /></span>
+            <span class="songName">We don't talk anymore</span>
+            <span class="songListPlay">
+              <span class="timespan"
+                >03:50<img src="../Spotify/play.png" alt="play" id="7" /> </span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="album">
+        <img src="./album.png" alt="album" />
+      </div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        value="0"
+        min="0"
+        max="100"
+      />
+      <div class="icons">
+        <img src="../Spotify/backward.png" alt="backward" id="previous" />
+        <img
+          src="../Spotify/play.png"
+          alt="play"
+          id="masterPlay"
+          onclick="play()"
+        />
+        <img src="../Spotify/forward.png" alt="forward" id="next" />
+        <img src="../Spotify/shuffle.png" alt="shuffle" />
+        <img src="../Spotify/repeat.png" alt="repeat" />
+        <img src="../Spotify/sound.png" alt="speaker" />
+      </div>
+      <div class="songInfo">
+        <img
+          src="./Spotify/playing.gif"
+          width="160px"
+          alt="GIF"
+          id="gif"
+        /><span id="masterSongName">Let me love you</span>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
